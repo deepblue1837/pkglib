@@ -1,0 +1,31 @@
+{
+  "name": "pkglib",
+  "version": "1.1.1",
+  "description": "Package compression tool to keep directory structure",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "bin": {
+    "pkglib": "./bin/cli.js"
+  },
+  "scripts": {},
+  "keywords": [
+    "pkglib",
+    "gzr",
+    "tar",
+    "zlib",
+    "gz",
+    "zip"
+  ],
+  "author": "Scot Wang",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/deepblue1837/pkglib.git"
+  },
+  "bugs": {
+    "url": "https://github.com/deepblue1837/pkglib/issues"
+  },
+  "homepage": "https://github.com/deepblue1837/pkglib#readme"
+}
