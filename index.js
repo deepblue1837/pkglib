@@ -6,8 +6,9 @@ function GZR() {
      * 打包压缩
      * @param input - 要打包压缩的文件路径地址
      * @param output - 打包压缩后存放的路径地址
+     * @param callback - 回调
      */
-    this.gzr = function (input, output) {
+    this.gzr = function (input, output, callback) {
         if(!input || input === ''){
             console.log('缺少要操作的目标文件路径参数');
             return;
@@ -18,15 +19,16 @@ function GZR() {
             return;
         }
 
-        Package(input, output);
+        Package(input, output, callback);
     };
 
     /**
      * 解压提取
      * @param input - 要解压提取的压缩包路径地址
      * @param output - 解压提取后的文件存放的路径地址
+     * @param callback - 回调
      */
-    this.ungzr = function (input, output) {
+    this.ungzr = function (input, output, callback) {
         if(!input || input === ''){
             console.log('缺少要操作的目标文件路径参数');
             return;
@@ -37,7 +39,7 @@ function GZR() {
             return;
         }
 
-        Extract(input, output);
+        Extract(input, output, callback);
     };
 }
 
