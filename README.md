@@ -5,6 +5,7 @@
 - 暂不兼容windows系统
 - 非标准协议打包
 - GZIP标准压缩
+- 同步处理
 
 ## Install
 
@@ -14,7 +15,7 @@ npm install pkglib
 
 ## API
 
-### gzr(input, output, callback)
+### gzr(input, output)
 
 打包压缩
 
@@ -23,14 +24,13 @@ npm install pkglib
 
 ```
 var pkglib = require('pkglib');
-pkglib.gzr('./test', ./dist, function () {
-  console.log('package success');
-})
+pkglib.gzr('./test', ’./dist‘)；
+console.log('package success');
 ```
 
 
 
-### ungzr(input, output, callback)
+### ungzr(input, output)
 
 解压提取
 
@@ -39,9 +39,8 @@ pkglib.gzr('./test', ./dist, function () {
 
 ```
 var pkglib = require('pkglib');
-pkglib.ungzr('./dist/test.gzr', ./app, function () {
-  console.log('extract success');
-})
+pkglib.ungzr('./dist/test.gzr', './app');
+console.log('extract success');
 ```
 
 
